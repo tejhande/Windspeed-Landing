@@ -11,7 +11,7 @@ window.addEventListener("load", function () {
 
 // Form submission handling
 document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+//   e.preventDefault();
 
   // Get form values
   const name = document.getElementById("name").value;
@@ -29,7 +29,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   console.log("Form submitted:", { name, email, subject, message });
 
   // Show success message
-  alert("Thank you for your message! We'll get back to you soon.");
+//   alert("Thank you for your message! We'll get back to you soon.");
 
   // Reset form
   this.reset();
