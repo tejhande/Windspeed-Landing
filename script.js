@@ -5,8 +5,8 @@ window.addEventListener("load", function () {
     loadingScreen.style.opacity = "0";
     setTimeout(() => {
       loadingScreen.style.display = "none";
-    }, 500);
-  }, 1500);
+    }, 100);
+  }, 400);
 });
 
 // Form submission handling
