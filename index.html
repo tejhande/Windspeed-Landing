@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WindSpeed Delivery Service - Connect to User App, Admin Panel, and Delivery Panel. Fast and reliable delivery solutions."
+    />
+    <meta
+      name="keywords"
+      content="delivery service, logistics, WindSpeed, admin panel, delivery app"
+    />
+    <meta name="author" content="Tejas Hande" />
+    <meta property="og:title" content="WindSpeed - Delivery Service Hub" />
+    <meta
+      property="og:description"
+      content="Access all WindSpeed applications in one place"
+    />
+    <meta property="og:type" content="website" />
+    <title>WindSpeed Delivery Service Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="download.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Loading Animation -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader"></div>
+      <p>Loading WindSpeed Portal...</p>
+    </div>
+
+    <div class="container">
+      <header>
+        <div class="logo">
+          <div class="logo-circle">
+            <span>W</span>
+          </div>
+        </div>
+        <h1>WindSpeed Delivery</h1>
+        <p class="tagline">
+          Connect to our suite of applications designed for users,
+          administrators, and delivery personnel.
+        </p>
+      </header>
+
+      <section class="apps-section">
+        <div class="app-card">
+          <div class="app-icon">📱</div>
+          <h2 class="app-title">User App</h2>
+          <p class="app-description">
+            Place orders, track deliveries in real-time, and manage your account
+            with our user-friendly application.
+          </p>
+          <a href="https://windspeed.vercel.app" target="_blank" class="btn"
+            >Access User App</a
+          >
+        </div>
+
+        <div class="app-card">
+          <div class="app-icon">👨‍💼</div>
+          <h2 class="app-title">Admin Panel</h2>
+          <p class="app-description">
+            Manage operations, track performance metrics, and oversee your
+            delivery network from the admin dashboard.
+          </p>
+          <a
+            href="https://admin-windspeed.vercel.app"
+            target="_blank"
+            class="btn"
+            >Access Admin Panel</a
+          >
+        </div>
+
+        <div class="app-card">
+          <div class="app-icon">🚚</div>
+          <h2 class="app-title">Delivery Panel</h2>
+          <p class="app-description">
+            Delivery personnel can manage assignments, optimize routes, and
+            update delivery status in real-time.
+          </p>
+          <a
+            href="https://delivery-windspeed.vercel.app"
+            target="_blank"
+            class="btn"
+            >Access Delivery Panel</a
+          >
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <!-- Replace with your actual Web3Forms access key -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="5c30a443-a531-447a-b0db-fcb0e4a4d0e6"
+          />
+
+          <!-- Honeypot Spam Protection -->
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              placeholder="Subject of your message"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Your message here..."
+            ></textarea>
+          </div>
+
+          <!-- Optional: Redirect after successful submission -->
+          <!-- <input type="hidden" name="redirect" value="https://windspeed-landing.vercel.app" /> -->
+
+          <button type="submit" class="btn submit-btn">Send Message</button>
+        </form>
+      </section>
+
+      <footer>
+        <p class="made-by">Made by Tejas Hande</p>
+        <div class="portfolio-links">
+          <a
+            href="https://tejashande.vercel.app"
+            class="portfolio-link"
+            target="_blank"
+            >tejashande.vercel.app</a
+          >
+        </div>
+        <p style="margin-top: 20px">
+          &copy; 2023 WindSpeed Delivery. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
