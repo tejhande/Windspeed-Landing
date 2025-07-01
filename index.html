@@ -5,176 +5,569 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="WindSpeed Delivery Service - Connect to User App, Admin Panel, and Delivery Panel. Fast and reliable delivery solutions."
+      content="Windspeed - Your own branded food delivery system. Create a Swiggy/Zomato-style platform for your restaurant, cloud kitchen or tiffin service without commissions."
     />
     <meta
       name="keywords"
-      content="delivery service, logistics, WindSpeed, admin panel, delivery app"
+      content="food delivery web app, restaurant ordering website source code, Zomato clone script, Swiggy clone, cloud kitchen delivery system, buy food delivery app, restaurant POS system, white-label food delivery solution"
     />
-    <meta name="author" content="Tejas Hande" />
-    <meta property="og:title" content="WindSpeed - Delivery Service Hub" />
-    <meta
-      property="og:description"
-      content="Access all WindSpeed applications in one place"
+    <title>
+      Windspeed - Build Your Own Food Delivery Platform | No Commissions
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <meta property="og:type" content="website" />
-    <title>WindSpeed Delivery Service Hub</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="download.jpg" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="download.jpg" type="image/x-icon" />
   </head>
   <body>
-    <!-- Loading Animation -->
-    <div class="loading-screen" id="loadingScreen">
-      <div class="loader"></div>
-      <p>Loading WindSpeed Portal...</p>
-    </div>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo">
+            <i class="fas fa-wind"></i>
+            Windspeed
+          </a>
+          <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <!-- <li><a href="#pricing">Pricing</a></li> -->
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <div class="container">
-      <header>
-        <div class="logo">
-          <div class="logo-circle">
-            <span>W</span>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>
+              Your Restaurant, Your Rules: Own Your Food Delivery Platform
+            </h1>
+            <p>
+              Windspeed is a complete white-label food delivery solution for
+              restaurants, cloud kitchens, hotels, and tiffin services. Stop
+              paying commissions and start building your own brand.
+            </p>
+            <div class="hero-btns">
+              <a href="#contact" class="btn">Get Started Today</a>
+              <a href="#features" class="btn btn-outline">Explore Features</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <a href="https://windspeed.vercel.app">
+            <img src="/image.png" alt="Windspeed food delivery app interface" /></a>
           </div>
         </div>
-        <h1>WindSpeed Delivery</h1>
-        <p class="tagline">
-          Connect to our suite of applications designed for users,
-          administrators, and delivery personnel.
+
+        <div class="stats">
+          <div class="stat-item">
+            <h3>70%</h3>
+            <p>Commission Savings</p>
+          </div>
+          <div class="stat-item">
+            <h3>24h</h3>
+            <p>Setup Time</p>
+          </div>
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Happy Restaurants</p>
+          </div>
+          <div class="stat-item">
+            <h3>99%</h3>
+            <p>Uptime Guarantee</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="text-center">
+          <h2>Complete Food Delivery Solution</h2>
+          <p>
+            Everything you need to run your own branded food delivery platform
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>User-Friendly WebApp</h3>
+            <p>
+              Beautiful, responsive interface with live menu, smart search, cart
+              management, and multiple payment options including Razorpay and
+              COD.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h3>Powerful Admin Panel</h3>
+            <p>
+              Full control over your menu, orders, users, delivery partners, and
+              promo codes with analytics dashboard.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-biking"></i>
+            </div>
+            <h3>Delivery Management</h3>
+            <p>
+              Assign delivery partners, track orders in real-time with live
+              location updates, and manage delivery status.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>Order Management</h3>
+            <p>
+              Easily manage all incoming orders with status tracking, customer
+              details, and order history.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-percentage"></i>
+            </div>
+            <h3>Promotions Engine</h3>
+            <p>
+              Create and manage promo codes with custom rules (expiry, min
+              order, usage limits) to boost sales.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Analytics & Reports</h3>
+            <p>
+              Make data-driven decisions with detailed reports on sales, popular
+              items, customer behavior, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Types Section -->
+    <section class="user-types" id="how-it-works">
+      <div class="container">
+        <div class="text-center">
+          <h2>Designed For All Stakeholders</h2>
+          <p>
+            Perfect experience for customers, restaurant owners, and delivery
+            partners
+          </p>
+        </div>
+
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="customer">
+            Customer WebApp
+          </button>
+          <button class="tab-btn" data-tab="admin">Admin Panel</button>
+          <button class="tab-btn" data-tab="delivery">Delivery WebApp</button>
+        </div>
+
+        <div class="tab-content active" id="customer-content">
+          <h3>Customer Experience</h3>
+          <p>
+            Give your customers the best ordering experience with these
+            features:
+          </p>
+          <ul>
+            <li>Beautiful restaurant menu with high-quality images</li>
+            <li>Smart search with instant results</li>
+            <li>One-click reordering of favorite meals</li>
+            <li>Real-time order tracking on map</li>
+            <li>Multiple payment options (Razorpay, COD, Wallet)</li>
+            <li>Personalized recommendations based on order history</li>
+            <li>Order scheduling for future dates</li>
+            <li>Easy cancellation and refund process</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="admin-content">
+          <h3>Restaurant Management</h3>
+          <p>Complete control over your food delivery business:</p>
+          <ul>
+            <li>Drag-and-drop menu management</li>
+            <li>Real-time order dashboard</li>
+            <li>Comprehensive customer management</li>
+            <li>Advanced promo code system</li>
+            <li>Delivery partner assignment</li>
+            <li>Sales analytics and reporting</li>
+            <li>Inventory management</li>
+            <li>Multi-branch support</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="delivery-content">
+          <h3>Delivery Partner Tools</h3>
+          <p>Efficient tools for your delivery team:</p>
+          <ul>
+            <li>Simple order assignment system</li>
+            <li>In-app navigation with Google Maps integration</li>
+            <li>Real-time order status updates</li>
+            <li>Earnings tracking</li>
+            <li>Delivery history and ratings</li>
+            <li>Optimized route planning</li>
+            <li>Customer contact information</li>
+            <li>Proof of delivery capture</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack">
+      <div class="container">
+        <div class="text-center">
+          <h2>Built With Modern Technology</h2>
+          <p>Robust, scalable, and secure foundation</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card text-center">
+            <div class="feature-icon" style="margin: 0 auto 20px">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3>React.js Frontend</h3>
+            <p>Fast, responsive user interfaces for all platforms</p>
+          </div>
+
+          <div class="feature-card text-center">
+            <div class="feature-icon" style="margin: 0 auto 20px">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3>Node.js & Express</h3>
+            <p>High-performance backend for handling thousands of orders</p>
+          </div>
+
+          <div class="feature-card text-center">
+            <div class="feature-icon" style="margin: 0 auto 20px">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>MongoDB Database</h3>
+            <p>Flexible, scalable NoSQL database for dynamic data</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Launch Your Own Food Delivery Platform?</h2>
+        <p>
+          Join hundreds of restaurants that have saved thousands in commissions
+          and built their brand with Windspeed.
         </p>
-      </header>
+        <a href="#contact" class="btn btn-secondary">Get Started Now</a>
+      </div>
+    </section>
 
-      <section class="apps-section">
-        <div class="app-card">
-          <div class="app-icon">📱</div>
-          <h2 class="app-title">User App</h2>
-          <p class="app-description">
-            Place orders, track deliveries in real-time, and manage your account
-            with our user-friendly application.
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="text-center">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about Windspeed</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >How is Windspeed different from listing on Swiggy or
+                Zomato?</span
+              >
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Windspeed is your own branded food delivery platform. Unlike
+                third-party services, you keep 100% of your profits, own
+                customer data, control the user experience, and build your brand
+                directly with customers.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What technical skills do I need to run Windspeed?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                None! Windspeed is a fully managed solution. We handle all
+                technical aspects including hosting, maintenance, and updates.
+                You get a simple admin panel to manage your restaurant
+                operations.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can I customize the look and feel of my app?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely! Windspeed is a white-label solution, meaning you can
+                fully brand it with your restaurant's logo, colors, and
+                messaging. We offer various customization options to make it
+                uniquely yours.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What payment methods are supported?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Windspeed supports Razorpay for online payments (credit/debit
+                cards, UPI, netbanking, wallets) as well as cash on delivery
+                (COD). You can also add custom payment methods based on your
+                requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How quickly can I get started with Windspeed?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We can have your custom-branded food delivery platform up and
+                running in just 24-48 hours. The setup process is quick and we
+                provide full onboarding support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2>Get In Touch</h2>
+          <p>
+            Ready to start your own food delivery platform? Contact us today!
           </p>
-          <a href="https://windspeed.vercel.app" target="_blank" class="btn"
-            >Access User App</a
-          >
         </div>
 
-        <div class="app-card">
-          <div class="app-icon">👨‍💼</div>
-          <h2 class="app-title">Admin Panel</h2>
-          <p class="app-description">
-            Manage operations, track performance metrics, and oversee your
-            delivery network from the admin dashboard.
-          </p>
-          <a
-            href="https://admin-windspeed.vercel.app"
-            target="_blank"
-            class="btn"
-            >Access Admin Panel</a
-          >
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Name</h4>
+                <p>Tejas Hande</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 86008 28734</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>windspeed.food@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Monday - Sunday: 9AM - 7PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send us a message</h3>
+            <form
+              id="contactForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <!-- Web3Forms Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="5c30a443-a531-447a-b0db-fcb0e4a4d0e6"
+              />
+
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <input type="tel" name="phone" placeholder="Your Phone" />
+              <input
+                type="text"
+                name="restaurant"
+                placeholder="Your Restaurant Name"
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+                 <input type="hidden" name="redirect" value="https://windspeed-landing.vercel.app/success.html" />
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <a href="#" class="logo">
+              <i class="fas fa-wind"></i>
+              Windspeed
+            </a>
+            <p>
+              Your complete solution for branded food delivery. Own your
+              platform, keep your profits, and build direct relationships with
+              your customers.
+            </p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h4>Features</h4>
+            <ul class="footer-links">
+              <li><a href="#">Customer WebApp</a></li>
+              <li><a href="#">Restaurant Admin</a></li>
+              <li><a href="#">Delivery WebApp</a></li>
+              <li><a href="#">Analytics Dashboard</a></li>
+              <li><a href="#">Promotions Engine</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 5: Get In Touch -->
+          <div class="footer-col">
+            <h4>Get In Touch</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://tejashande.vercel.app" target="_blank"
+                  >Portfolio🚀</a
+                >
+              </li>
+              <li>
+                <a href="https://tejashande.vercel.app" target="_blank"
+                  >Tejas Hande</a
+                >
+              </li>
+              <li>
+                <a href="tel:+918600828734">+91 8600828734</a>
+              </li>
+              <li>
+                <a href="mailto:tejasamolhande@gmail.com"
+                  >tejasamolhande@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="https://tejashande.vercel.app" target="_blank"
+                  >Pune, India</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="app-card">
-          <div class="app-icon">🚚</div>
-          <h2 class="app-title">Delivery Panel</h2>
-          <p class="app-description">
-            Delivery personnel can manage assignments, optimize routes, and
-            update delivery status in real-time.
-          </p>
-          <a
-            href="https://delivery-windspeed.vercel.app"
-            target="_blank"
-            class="btn"
-            >Access Delivery Panel</a
-          >
+        <div class="copyright">
+          <p>&copy; 2023 Windspeed. All rights reserved.</p>
         </div>
-      </section>
+      </div>
+    </footer>
 
-      <section class="contact-section">
-        <h2 class="section-title">Contact Us</h2>
-        <form
-          class="contact-form"
-          id="contactForm"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-        >
-          <!-- Replace with your actual Web3Forms access key -->
-          <input
-            type="hidden"
-            name="access_key"
-            value="5c30a443-a531-447a-b0db-fcb0e4a4d0e6"
-          />
-
-          <!-- Honeypot Spam Protection -->
-          <input
-            type="checkbox"
-            name="botcheck"
-            class="hidden"
-            style="display: none"
-          />
-
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Enter your name"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Enter your email"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              required
-              placeholder="Subject of your message"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              placeholder="Your message here..."
-            ></textarea>
-          </div>
-
-          <!-- Optional: Redirect after successful submission -->
-          <input type="hidden" name="redirect" value="https://windspeed-landing.vercel.app/success.html" />
-
-          <button type="submit" class="btn submit-btn">Send Message</button>
-        </form>
-      </section>
-
-      <footer>
-        <p class="made-by">Made by Tejas Hande</p>
-        <div class="portfolio-links">
-          <a
-            href="https://tejashande.vercel.app"
-            class="portfolio-link"
-            target="_blank"
-            >tejashande.vercel.app</a
-          >
-        </div>
-        <p style="margin-top: 20px">
-          &copy; 2023 WindSpeed Delivery. All rights reserved.
-        </p>
-      </footer>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
